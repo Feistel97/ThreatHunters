@@ -1,0 +1,38 @@
+@charset "EUC-KR";
+
+ 
+ 
+ 
+body
+{
+  background-color: "ivory";
+  margin: 0 auto;
+  width: 300px;
+}
+
+input[type="submit"] {
+  border: 3;
+  padding : 10px 25px;
+  display: block;
+  margin: 5px auto;
+  font-size: 15px;
+}
+
+input[type="text"] {
+  padding: 3px;
+  margin: 8px;
+  font-size: 18px;
+}
+
+strong {
+  font-size: 15px;
+}
+
+H3 {
+	
+	text-align: center
+  
+}
+select {
+  font-size: 15px;
+}

@@ -1,0 +1,59 @@
+{
+    "manifest_version": 3,
+   
+    "name": "ThreatHunters",
+    "description": "Malignancy URL report",
+    "version": "1.0",
+
+    "content_scripts" : [
+      {
+        "matches" : ["<all_urls>"],
+        "js" : ["index.js"]
+      }
+    ],
+
+    "action": { 
+      "default_icon":  {
+        "16": "./img/SPAM.png",
+        "32": "./img/SPAM.png",
+        "48": "./img/SPAM.png",
+        "128": "./img/SPAM.png"
+      },
+      "default_popup": "./public/report.html"
+    },
+
+    "background" :{
+      "background.service_worker": ["background.js"]
+    },
+
+    "icons" : {
+      "16": "./img/SPAM.png",
+      "32": "./img/SPAM.png",
+      "48": "./img/SPAM.png",
+      "128": "./img/SPAM.png"
+    },
+
+    "permissions": [
+      "storage",
+      "scripting",
+      "http://*/",
+      "https://*/",
+      "tcp-connect:*",
+      "networking.onc",
+      "nativeMessaging",
+      "https://example.com/",
+      "https://www.google.com/",
+      "http://localhost/*",
+      "notifications",
+      "alrams",
+      "https://example.com/api/*",
+      "https://cdn.jsdelivr.net/pyodide/v0.18.1/full/pyodide.js",
+      "https://api.example.com/*",
+      "tabs"
+    ],
+    "host_permissions": [
+      "*://localhost/*",
+      "*://127.0.0.1/*",
+      "https://192.168.15.128"
+    ]
+  }

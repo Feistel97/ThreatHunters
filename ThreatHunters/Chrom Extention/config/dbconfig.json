@@ -1,0 +1,6 @@
+{
+    "host" : "jolproject.cfwjcjtziy0c.ap-southeast-2.rds.amazonaws.com",
+    "user" : "UrlScan",
+    "password" : "!gks1234",
+    "database": "malignancy"
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="report.css">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<img src="../img/logo.PNG" width="300" height="150" alt="logo">
+		<title>ThreatHunters</title>
+	</head>
+<body>
+	<form action="http://localhost/db1/script.php" method="POST">
+	<p>
+		<H3>ThreatHunters는 의심스러운 URL을 분석하여 <font color="#1e90ff">악성 URL을 탐지</font>하는 프로그램입니다.</H3>
+	</p>
+	<br>
+	<p>
+		<strong>URL 입력<br>http://</strong>
+		<input type="text" name="re_url" placeholder="http://를 제외한 URL입력">
+	</p>
+	<p>
+		<div text-align: center><strong>신고 유형 선택</strong></div> <br>
+		<select name="type_url">
+			<option value="nope">선택</option>
+			<option value="Malware">악성</option>
+			<option value="Smishing">스미싱</option>
+			<option value="Phishing">피싱</option>
+			<option value="direct">기타</option>
+		</select>
+		<br>
+		<input type="submit" name="submit" value="신고">
+	</p>
+	</form>
+	</p>
+</body>
+</html>
